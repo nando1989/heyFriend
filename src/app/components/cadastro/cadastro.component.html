@@ -1,0 +1,64 @@
+<div class="container-cadastro">
+  <legend>Cadastro do funcionario</legend>
+  <form>
+    <div class="mb-3">
+      <label for="formFile" class="form-label"
+        >Sua foto </label
+      >
+      <input class="form-control" type="file" id="formFile" />
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Nome completo</label>
+      <input
+        type="text"
+        id="disabledTextInput"
+        class="form-control"
+        placeholder="Nome completo"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Telefone</label>
+      <input
+        type="number"
+        id="disabledTextInput"
+        class="form-control"
+        placeholder="Numero de telefone"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Nome da Empresa</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Faxinas</option>
+        <option>Carrapeta</option>
+        <option>Alterdata</option>
+
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Função</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Vendas</option>
+        <option>Rh</option>
+        <option>Deposito</option>
+        <option>Motorista</option>
+        <option>Serviços gerais</option>
+        <option>Gerencia</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="disabledFieldsetCheck"
+          disabled
+        />
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Aceito os termos!
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<router-outlet />

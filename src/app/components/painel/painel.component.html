@@ -1,0 +1,56 @@
+<mat-sidenav-container class="painel-container">
+
+  <div class="sidebar-topo">
+    <h4>Bem-vindo, {{ usuario }}!</h4>
+  </div>
+  <mat-sidenav mode="side" opened class="menu-lateral">
+    <a class="link-sidebar" href="/painel">Dashbord</a>
+    <a class="link-sidebar" href="/usuarios">Usuários</a>
+    <a class="link-sidebar" href="/configuracoes">Configurações</a>
+  </mat-sidenav>
+  <mat-sidenav-content class="conteudo">
+    <div class="sidebar-topo">
+      <h4>Bem-vindo, {{ usuario }}!</h4>
+    </div>
+
+    <div class="secao-tabela">
+      <h2>Usuarios</h2>
+      <mat-card>
+        <mat-card-content>
+          <table class="tabela-funcionarios">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Função</th>
+                <th>Setor</th>
+                <th>Análise</th>
+                <th>Reações do time</th>
+                <th>Pontos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let f of funcionarios">
+                <td>{{ f.nome }}</td>
+                <td>{{ f.funcao }}</td>
+                <td>{{ f.setor }}</td>
+                <td>
+                  <span [ngStyle]="getAnaliseStyle(f.analise)">
+                    {{ f.analise }}
+                  </span>
+                </td>
+                <td>
+                  <span *ngFor="let emoji of f.reacoes" [matTooltip]="getEmojiLabel(emoji)">
+                    {{ emoji }}
+                  </span>
+                </td>
+                <td>
+                  {{ f.pontos}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

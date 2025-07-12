@@ -1,0 +1,135 @@
+.painel-container {
+  height: 100vh;
+}
+
+.sidebar-topo {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f8fcfd;
+  box-shadow: 1px 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.menu-lateral {
+  width: 20rem;
+  padding: 1rem;
+  background-color: #f8fcfd;
+  box-shadow: 1px 0 7px rgba(0, 0, 0, 0.3);
+
+  a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #424242;
+    font-size: larger;
+  }
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(1, 177, 231);
+}
+
+.secao-tabela {
+  width: auto;
+  margin: 2rem;
+  background-color: rgb(1, 177, 231);
+
+  h2 {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 400;
+  }
+}
+
+mat-card {
+  background-color: #ffffff;
+}
+
+mat-card-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+::ng-deep mat-sidenav {
+  border-radius: 0 !important;
+}
+
+.link-sidebar {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+  margin: none;
+
+  &:hover {
+    background-color: #e1ebec;
+  }
+}
+
+.tabela-funcionarios {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  thead {
+    background: #f3f3f3;
+  }
+
+  tr:nth-child(even) {
+    background: #fafafa;
+  }
+
+  span {
+    margin-right: 0.25rem;
+    font-size: 1.2rem;
+  }
+
+  .analise-criativo {
+    background: #f3d9fa;
+    color: #9c36b5;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .analise-resiliente {
+    background: #e7f5ff;
+    color: #1864ab;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .analise-colaborativo {
+    background: #e6fcf5;
+    color: #087f5b;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .analise-organizado {
+    background: #fff9db;
+    color: #b08900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .analise-default {
+    background: #e9ecef;
+    color: #495057;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+}
