@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-painel',
-  imports: [CommonModule, MatCardModule, MatSidenavModule,  MatTooltipModule],
+  imports: [CommonModule, MatCardModule, MatSidenavModule,  MatTooltipModule, HomeComponent],
   templateUrl: './painel.component.html',
   styleUrl: './painel.component.scss',
 })

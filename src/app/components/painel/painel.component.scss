@@ -32,17 +32,7 @@
   background-color: rgb(1, 177, 231);
 }
 
-.secao-tabela {
-  width: auto;
-  margin: 2rem;
-  background-color: rgb(1, 177, 231);
 
-  h2 {
-    margin-bottom: 2rem;
-    color: #ffffff;
-    font-weight: 400;
-  }
-}
 
 mat-card {
   background-color: #ffffff;
@@ -68,68 +58,4 @@ mat-card-title {
   }
 }
 
-.tabela-funcionarios {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
 
-  th,
-  td {
-    padding: 0.5rem;
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  thead {
-    background: #f3f3f3;
-  }
-
-  tr:nth-child(even) {
-    background: #fafafa;
-  }
-
-  span {
-    margin-right: 0.25rem;
-    font-size: 1.2rem;
-  }
-
-  .analise-criativo {
-    background: #f3d9fa;
-    color: #9c36b5;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .analise-resiliente {
-    background: #e7f5ff;
-    color: #1864ab;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .analise-colaborativo {
-    background: #e6fcf5;
-    color: #087f5b;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .analise-organizado {
-    background: #fff9db;
-    color: #b08900;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .analise-default {
-    background: #e9ecef;
-    color: #495057;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-}

@@ -12,45 +12,6 @@
     <div class="sidebar-topo">
       <h4>Bem-vindo, {{ usuario }}!</h4>
     </div>
-
-    <div class="secao-tabela">
-      <h2>Usuarios</h2>
-      <mat-card>
-        <mat-card-content>
-          <table class="tabela-funcionarios">
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Função</th>
-                <th>Setor</th>
-                <th>Análise</th>
-                <th>Reações do time</th>
-                <th>Pontos</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let f of funcionarios">
-                <td>{{ f.nome }}</td>
-                <td>{{ f.funcao }}</td>
-                <td>{{ f.setor }}</td>
-                <td>
-                  <span [ngStyle]="getAnaliseStyle(f.analise)">
-                    {{ f.analise }}
-                  </span>
-                </td>
-                <td>
-                  <span *ngFor="let emoji of f.reacoes" [matTooltip]="getEmojiLabel(emoji)">
-                    {{ emoji }}
-                  </span>
-                </td>
-                <td>
-                  {{ f.pontos}}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </mat-card-content>
-      </mat-card>
-    </div>
+    <app-home></app-home>
   </mat-sidenav-content>
 </mat-sidenav-container>
